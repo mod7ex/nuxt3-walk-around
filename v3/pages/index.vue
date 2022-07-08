@@ -7,6 +7,15 @@ definePageMeta({
 
 let { $hello } = useNuxtApp(); // helpers
 
+const cookie = useCookie('my-cookie');
+// const cookie = useCookie('my-cookie', {httpOnly: true});
+
+cookie.value = 'lorem cookie'
+
+let changeCookie = () => {
+    cookie.value = 'my-cookie ' + Date.now() // it will change if httpOnly is false
+}
+
 </script>
 
 <template>
@@ -27,5 +36,13 @@ let { $hello } = useNuxtApp(); // helpers
             optio, ipsum labore exercitationem perferendis eius dolores. Omnis
             vero odit odio neque porro?
         </p>
+
+        <br><br>
+        <hr>
+        <br><br>
+        
+        <p>this is the cookie --> {{ cookie }}</p>
+
+        <button @click="changeCookie">Set a random cookie</button>
     </div>
 </template>

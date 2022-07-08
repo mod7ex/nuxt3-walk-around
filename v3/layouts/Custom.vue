@@ -1,8 +1,11 @@
-<script setup>
+<script setup lang="ts">
 
 let route = useRoute();
 
-useHead({ title: `custom | ${route.meta.title}` })
+useHead({
+    title: `${ route.meta.title ?? 'Some custom title' }`,
+    titleTemplate: (title: string) => `My App - ${title}`,
+})
 
 </script>
 

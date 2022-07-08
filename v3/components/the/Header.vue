@@ -1,3 +1,7 @@
+<script setup lang="ts">
+let clearCache = () => refreshNuxtData();
+</script>
+
 <template>
 
   <header id="app-header">
@@ -5,10 +9,14 @@
 
       <h1><nuxt-link :to="{ name: 'index' }" >Site Name</nuxt-link></h1>
 
+      <button @click="clearCache" >clear cache</button>
+
       <ul id="nav">
           <li><nuxt-link :to="{ name: 'parent' }"> parent </nuxt-link></li>
           <li><nuxt-link :to="{ name: 'work' }"> work </nuxt-link></li>
           <li><nuxt-link :to="{ name: 'about' }"> about </nuxt-link></li>
+          <li><nuxt-link :to="{ name: 'fetch' }"> fetch </nuxt-link></li>
+          <li><nuxt-link :to="{ name: 'state' }"> state </nuxt-link></li>
       </ul>
 
     </div>
