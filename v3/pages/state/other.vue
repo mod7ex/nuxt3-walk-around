@@ -9,10 +9,6 @@ const counter = useState('counter');
 
 if(process.server) counter.value = 100000 ;
 
-// const locales = useLocales()
-// const locale = useLocale()
-// const date = useLocaleDate(new Date('2016-10-26') /* NUXT_BIRTHDAY */)
-
 </script>
 
 <template>
@@ -21,12 +17,6 @@ if(process.server) counter.value = 100000 ;
 
         <hr>
         <br> <br>
-
-        <!--
-            <p>locales : {{ locales }}</p>
-            <p>locale : {{ locale }}</p>
-            <p>date : {{ date }}</p>
-        -->
 
     </div>
 </template>
