@@ -8,10 +8,9 @@ console.log('cookie headers', useRequestHeaders(['cookie']))
 
 <template>
 
-  <div>
-    <nuxt-layout>
-      <nuxt-page />
-    </nuxt-layout>
-  </div>
+  <nuxt-layout>
+    <NuxtLoadingIndicator />
+    <nuxt-page />
+  </nuxt-layout>
 
 </template> 

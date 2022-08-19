@@ -2,9 +2,9 @@
     <div class="user form">
         <form action="">
             <h1>user form</h1>
-            <input type="text" name="name">
-            <input type="email" name="email">
-            <input type="submit" value="Click">
+            <n-text-input type="text" name="name" />
+            <n-text-input type="email" name="email" />
+            <n-button >Click</n-button>
         </form>
     </div>
 </template>

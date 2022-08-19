@@ -21,9 +21,9 @@ const date = useLocaleDate(new Date('2016-10-26') /* NUXT_BIRTHDAY */)
 
         <h1>Counter: {{ counter }}</h1>
 
-        <button @click="counter++"> + </button>
+        <n-button @click="counter++"> + </n-button>
 
-        <button @click="counter--"> - </button>
+        <n-button @click="counter--"> - </n-button>
 
         <hr>
         <br> <br>

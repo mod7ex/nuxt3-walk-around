@@ -7,7 +7,9 @@ let clearCache = () => refreshNuxtData();
   <header id="app-header">
     <div class="head-inner">
 
-      <h1><nuxt-link :to="{ name: 'index' }" >Site Name</nuxt-link></h1>
+      <h1><nuxt-link :to="{ name: 'index' }" >
+        <nuxt-icon />
+      </nuxt-link></h1>
 
       <button @click="clearCache" >clear cache</button>
 
@@ -17,6 +19,7 @@ let clearCache = () => refreshNuxtData();
           <li><nuxt-link :to="{ name: 'about' }"> about </nuxt-link></li>
           <li><nuxt-link :to="{ name: 'fetch' }"> fetch </nuxt-link></li>
           <li><nuxt-link :to="{ name: 'state' }"> state </nuxt-link></li>
+          <li><nuxt-link :to="{ name: 'error' }"> error </nuxt-link></li>
       </ul>
 
     </div>
@@ -26,7 +29,7 @@ let clearCache = () => refreshNuxtData();
 
 <style lang="scss">
 #app-header {
-    background-color: blue;
+    background-color: rgb(182, 182, 182);
     color: white;
 
     .head-inner{
